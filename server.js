@@ -25,7 +25,7 @@ app.use('/restaurants',restaurantRouter);
 app.use('/menulists',menulistsRouter);
 
 app.get('/',(req,res)=>{
-    res.send('It is working');
+     res.send('It is working');
 });
 
 app.listen(port, () => {
