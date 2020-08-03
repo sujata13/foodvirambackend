@@ -24,7 +24,9 @@ const menulistsRouter = require('./routes/menulists');
 app.use('/restaurants',restaurantRouter);
 app.use('/menulists',menulistsRouter);
 
-app.get('/',(req,res)=>{res.send('It is working')})
+app.get('/',(req,res)=>{
+    res.send('It is working');
+});
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
